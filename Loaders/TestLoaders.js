@@ -18,5 +18,5 @@ $(function() {
         { name: "Item 3", description: "Description of item 3" }
     ];
 
-    loadAndApplyTemplate('itemTemplate.hbs', data, '.container');
+    loadAndApplyTemplate('../Templates/itemTemplate.hbs', data, '.container');
 });

@@ -18,5 +18,5 @@ $(function() {
         { name: "Item 3", description: "Description of item 3" }
     ];
 
-    loadAndApplyTemplate('../Templates/itemTemplate.hbs', data, '.container');
+    loadAndApplyTemplate('http://localhost:5000/Templates/itemTemplate.hbs', data, '.container');
 });

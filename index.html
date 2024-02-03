@@ -15,30 +15,5 @@
 <script src="assets/JS/jQuery.js"></script>
 <script src="assets/JS/jQueryTemplate.js"></script>
 <script src="assets/JS/handlebars.min.js"></script>
-<script id="itemTemplate" type="text/x-handlebars-template">
-    <div class="item">
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>
-    </div>
-</script>
-<script>
-    $(function() {
-      var source = $("#itemTemplate").html();
-      var template = Handlebars.compile(source);
-
-      var data = [
-        { name: "Item 1", description: "Description of item 1" },
-        { name: "Item 2", description: "Description of item 2" },
-        { name: "Item 3", description: "Description of item 3" }
-      ];
-
-      var html = data.map(function(item) {
-        return template(item);
-      });
-
-      $(".container").html(html.join(''));
-    });
-</script>
-
 </body>
 </html>

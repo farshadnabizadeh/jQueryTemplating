@@ -1,4 +1,6 @@
-<div class="item">
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
-</div>
+{{#each this}}
+    <div class="item">
+        <h2>{{{name}}}</h2>
+        <p>{{description}}</p>
+    </div>
+{{/each}}

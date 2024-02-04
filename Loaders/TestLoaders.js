@@ -20,5 +20,5 @@ $(function() {
         { name: "Item 3", description: "Description of item 3" }
     ];
 
-    loadAndApplyTemplate('http://localhost:5000/Templates/itemTemplate.hbs', data, '.__items__');
+    loadAndApplyTemplate('../Templates/itemTemplate.hbs', data, '.__items__');
 });
